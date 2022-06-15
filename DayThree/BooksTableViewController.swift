@@ -38,7 +38,7 @@ class BooksTableViewController: UITableViewController {
         if let url = booksList[indexPath.row].thumbnailUrl {
             AF.request(url).response { (response) in
                 if let image = response.data {
-                        cell?.urlView.image = UIImage(data: image)
+                    cell?.urlView.image = UIImage(data: image)
                 }else {
                     cell?.urlView.image = UIImage(named: "assets/no-cover")
                 }
