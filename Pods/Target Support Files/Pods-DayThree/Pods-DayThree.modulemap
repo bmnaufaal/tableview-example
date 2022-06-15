@@ -1,0 +1,6 @@
+module Pods_DayThree {
+  umbrella header "Pods-DayThree-umbrella.h"
+
+  export *
+  module * { export * }
+}
