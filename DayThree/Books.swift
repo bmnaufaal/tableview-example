@@ -11,5 +11,5 @@ struct Books : Decodable {
     let title: String
     let authors: [String]
     let isbn: String?
-    let url: String?
+    let thumbnailUrl: String?
 }

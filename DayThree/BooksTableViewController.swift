@@ -7,7 +7,6 @@
 
 import UIKit
 import Alamofire
-import AlamofireImage
 
 class BooksTableViewController: UITableViewController {
     
@@ -35,10 +34,14 @@ class BooksTableViewController: UITableViewController {
         let joinedAuthors = booksList[indexPath.row].authors.joined(separator: ", ")
         cell?.titleView.text = booksList[indexPath.row].title
         cell?.authorsView.text = joinedAuthors
-        cell?.isbnView.text = booksList[indexPath.row].isbn ?? "No ISBN"
-        let image = AF.request("https://httpbin.org/image/png").responseImage { response in
-            if case .success(let image) = response.result {
-                cell?.urlView.image = image
+        cell?.isbnView.text = booksList[indexPath.row].isbn
+        if let url = booksList[indexPath.row].thumbnailUrl {
+            AF.request(url).response { (response) in
+                if let image = response.data {
+                        cell?.urlView.image = UIImage(data: image)
+                }else {
+                    cell?.urlView.image = UIImage(named: "assets/no-cover")
+                }
             }
         }
         
