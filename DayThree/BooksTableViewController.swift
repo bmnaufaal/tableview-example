@@ -31,8 +31,8 @@ class BooksTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TableViewCell
         
-        cell?.titleView.text = booksList[indexPath.row].author
-        cell?.authorView.text = "By " + booksList[indexPath.row].title
+        cell?.titleView.text = booksList[indexPath.row].title
+        cell?.authorView.text = "By " + booksList[indexPath.row].author
         cell?.yearView.text = String(booksList[indexPath.row].year)
         return cell!
     }
