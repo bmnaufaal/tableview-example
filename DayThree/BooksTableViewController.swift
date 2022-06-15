@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 class BooksTableViewController: UITableViewController {
     
@@ -30,10 +32,16 @@ class BooksTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TableViewCell
-        
+        let joinedAuthors = booksList[indexPath.row].authors.joined(separator: ", ")
         cell?.titleView.text = booksList[indexPath.row].title
-        cell?.authorView.text = "By " + booksList[indexPath.row].author
-        cell?.yearView.text = String(booksList[indexPath.row].year)
+        cell?.authorsView.text = joinedAuthors
+        cell?.isbnView.text = booksList[indexPath.row].isbn ?? "No ISBN"
+        let image = AF.request("https://httpbin.org/image/png").responseImage { response in
+            if case .success(let image) = response.result {
+                cell?.urlView.image = image
+            }
+        }
+        
         return cell!
     }
 

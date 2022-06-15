@@ -51,9 +51,10 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="authorView" destination="2TL-FM-PC7" id="n2S-wu-WUS"/>
+                                    <outlet property="authorsView" destination="2TL-FM-PC7" id="LGU-jr-vuh"/>
+                                    <outlet property="isbnView" destination="3g0-cM-wHN" id="Thk-LO-Ws6"/>
                                     <outlet property="titleView" destination="aYL-0c-sQ6" id="3Tt-Ru-ykd"/>
-                                    <outlet property="yearView" destination="3g0-cM-wHN" id="i0h-h9-51M"/>
+                                    <outlet property="urlView" destination="BL9-e1-1Kk" id="kNv-0m-mL4"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

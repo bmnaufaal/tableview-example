@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		7B36AAEE2859D16E00127FA4 /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B36AAED2859D16E00127FA4 /* Books.swift */; };
+		7B36AAF22859D47600127FA4 /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B36AAF12859D47600127FA4 /* books.json */; };
 		7BF9F5C52859693100B506C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF9F5C42859693100B506C2 /* AppDelegate.swift */; };
 		7BF9F5C72859693100B506C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF9F5C62859693100B506C2 /* SceneDelegate.swift */; };
 		7BF9F5CC2859693100B506C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF9F5CA2859693100B506C2 /* Main.storyboard */; };
 		7BF9F5CE2859693500B506C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BF9F5CD2859693500B506C2 /* Assets.xcassets */; };
 		7BF9F5D12859693500B506C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF9F5CF2859693500B506C2 /* LaunchScreen.storyboard */; };
 		7BF9F5E5285996B000B506C2 /* BooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF9F5E4285996B000B506C2 /* BooksTableViewController.swift */; };
-		7BF9F5E928599AEC00B506C2 /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = 7BF9F5E828599AEC00B506C2 /* books.json */; };
 		7BF9F5F32859AE1600B506C2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF9F5F22859AE1600B506C2 /* TableViewCell.swift */; };
+		FBD2E8067E2B04CBD51444C2 /* libPods-DayThree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E016A888CC6188BEF15522 /* libPods-DayThree.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0032161B51FD32EC2B8DD7A1 /* Pods-DayThree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayThree.release.xcconfig"; path = "Target Support Files/Pods-DayThree/Pods-DayThree.release.xcconfig"; sourceTree = "<group>"; };
+		424BD8FD0ABF6824178318B8 /* Pods-DayThree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayThree.debug.xcconfig"; path = "Target Support Files/Pods-DayThree/Pods-DayThree.debug.xcconfig"; sourceTree = "<group>"; };
 		7B36AAED2859D16E00127FA4 /* Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Books.swift; sourceTree = "<group>"; };
+		7B36AAF12859D47600127FA4 /* books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = books.json; sourceTree = "<group>"; };
 		7BF9F5C12859693100B506C2 /* DayThree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayThree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BF9F5C42859693100B506C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BF9F5C62859693100B506C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,8 +32,8 @@
 		7BF9F5D02859693500B506C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BF9F5D22859693500B506C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BF9F5E4285996B000B506C2 /* BooksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewController.swift; sourceTree = "<group>"; };
-		7BF9F5E828599AEC00B506C2 /* books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = books.json; sourceTree = "<group>"; };
 		7BF9F5F22859AE1600B506C2 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		C7E016A888CC6188BEF15522 /* libPods-DayThree.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DayThree.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD2E8067E2B04CBD51444C2 /* libPods-DayThree.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39FBF83E293AC78C5BE9F242 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7E016A888CC6188BEF15522 /* libPods-DayThree.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7BF9F5B82859693100B506C2 = {
 			isa = PBXGroup;
 			children = (
 				7BF9F5C32859693100B506C2 /* DayThree */,
 				7BF9F5C22859693100B506C2 /* Products */,
+				DEA9F0FD544ACB2535EAA53C /* Pods */,
+				39FBF83E293AC78C5BE9F242 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,10 +85,20 @@
 				7BF9F5CD2859693500B506C2 /* Assets.xcassets */,
 				7BF9F5CF2859693500B506C2 /* LaunchScreen.storyboard */,
 				7BF9F5D22859693500B506C2 /* Info.plist */,
-				7BF9F5E828599AEC00B506C2 /* books.json */,
 				7B36AAED2859D16E00127FA4 /* Books.swift */,
+				7B36AAF12859D47600127FA4 /* books.json */,
 			);
 			path = DayThree;
+			sourceTree = "<group>";
+		};
+		DEA9F0FD544ACB2535EAA53C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				424BD8FD0ABF6824178318B8 /* Pods-DayThree.debug.xcconfig */,
+				0032161B51FD32EC2B8DD7A1 /* Pods-DayThree.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +108,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BF9F5D52859693500B506C2 /* Build configuration list for PBXNativeTarget "DayThree" */;
 			buildPhases = (
+				F005B339A2E4AA737971F1BA /* [CP] Check Pods Manifest.lock */,
 				7BF9F5BD2859693100B506C2 /* Sources */,
 				7BF9F5BE2859693100B506C2 /* Frameworks */,
 				7BF9F5BF2859693100B506C2 /* Resources */,
@@ -134,7 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BF9F5E928599AEC00B506C2 /* books.json in Resources */,
+				7B36AAF22859D47600127FA4 /* books.json in Resources */,
 				7BF9F5D12859693500B506C2 /* LaunchScreen.storyboard in Resources */,
 				7BF9F5CE2859693500B506C2 /* Assets.xcassets in Resources */,
 				7BF9F5CC2859693100B506C2 /* Main.storyboard in Resources */,
@@ -142,6 +168,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F005B339A2E4AA737971F1BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DayThree-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7BF9F5BD2859693100B506C2 /* Sources */ = {
@@ -294,6 +345,7 @@
 		};
 		7BF9F5D62859693500B506C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 424BD8FD0ABF6824178318B8 /* Pods-DayThree.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +373,7 @@
 		};
 		7BF9F5D72859693500B506C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0032161B51FD32EC2B8DD7A1 /* Pods-DayThree.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -9,6 +9,7 @@ import Foundation
 
 struct Books : Decodable {
     let title: String
-    let author: String
-    let year: Int
+    let authors: [String]
+    let isbn: String?
+    let url: String?
 }
