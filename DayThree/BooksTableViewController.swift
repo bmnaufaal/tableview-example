@@ -40,7 +40,7 @@ class BooksTableViewController: UITableViewController {
                 if let image = response.data {
                     cell?.urlView.image = UIImage(data: image)
                 }else {
-                    cell?.urlView.image = UIImage(named: "assets/no-cover")
+                    cell?.urlView.image = UIImage(named: "no-cover")
                 }
             }
         }
